@@ -1,17 +1,17 @@
 import { forwardRef } from "react";
 
 type InputProps = {
-  text: string;
-  className: string;
+  labelText: string;
+  placeholderText: string;
 };
 
-const Input = forwardRef<HTMLInputElement, InputProps>(({ text, className }, ref) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({ labelText, placeholderText }, ref) => {
   return (
     <div>
       <label htmlFor="inputBanyakAnggota" className="text-lg font-semibold">
-        {text}
+        {labelText}
       </label>
-      <input className={className} ref={ref} id="inputBanyakAnggota" type="number" />
+      <input placeholder={placeholderText} className="form-input mb-2 box-border w-full resize-y rounded border-black px-1 py-0.5 focus:border-transparent focus:ring-1 focus:ring-black" ref={ref} id="inputBanyakAnggota" type="number" />
     </div>
   );
 });
