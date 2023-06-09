@@ -5,7 +5,7 @@ type ContainerProps = {
 };
 
 function Container({ children }: ContainerProps): JSX.Element {
-  return <div className="batas mx-auto max-w-6xl px-2 py-1">{children}</div>;
+  return <div className="mx-auto max-w-6xl px-2 py-1">{children}</div>;
 }
 
 export default Container;
