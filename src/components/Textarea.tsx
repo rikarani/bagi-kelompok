@@ -2,7 +2,7 @@ import { forwardRef, useId } from "react";
 
 type TextareaProps = {
   label: string;
-  placeholder: string;
+  placeholder?: string;
   baris: number;
   className: string;
   value?: string;
