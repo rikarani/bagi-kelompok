@@ -1,13 +1,13 @@
 import { forwardRef, useId } from "react";
 
-type TextareaProps = {
+interface TextareaProps {
   label: string;
   baris: number;
   placeholder?: string;
   resize?: boolean;
   value?: string;
   readonly?: boolean;
-};
+}
 
 const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({ label, placeholder, baris, value, readonly = false, resize = true }, ref) => {
   const id = useId();

@@ -1,9 +1,11 @@
+import React from "react";
+
 interface UsagesInterface {
   id: number;
   desc: string;
 }
 
-function Usage(): JSX.Element {
+function Usage(): React.JSX.Element {
   const usages: UsagesInterface[] = [
     {
       id: 1,

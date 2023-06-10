@@ -1,10 +1,10 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import Usage from "./Usage";
 import Textarea from "../partials/Textarea";
 import Input from "../partials/Input";
 import Button from "../partials/Button";
 
-function Main(): JSX.Element {
+function Main(): React.JSX.Element {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 

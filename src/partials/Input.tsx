@@ -1,9 +1,9 @@
 import { forwardRef } from "react";
 
-type InputProps = {
+interface InputProps {
   label: string;
   placeholder: string;
-};
+}
 
 const Input = forwardRef<HTMLInputElement, InputProps>(({ label, placeholder }, ref) => {
   return (

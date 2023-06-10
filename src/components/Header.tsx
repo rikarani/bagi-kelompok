@@ -1,7 +1,8 @@
+import React from "react";
 import { IconContext } from "react-icons/lib/esm/iconContext";
 import { BsGithub } from "react-icons/bs";
 
-function Header(): JSX.Element {
+function Header(): React.JSX.Element {
   return (
     <div className="flex items-center gap-2 px-2 py-1">
       <IconContext.Provider value={{ size: "3.5rem" }}>
