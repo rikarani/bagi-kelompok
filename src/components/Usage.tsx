@@ -1,5 +1,4 @@
 import React from "react";
-
 interface UsagesInterface {
   id: number;
   desc: string;
@@ -17,19 +16,19 @@ function Usage(): React.JSX.Element {
     },
     {
       id: 3,
-      desc: "Tekan Tombol Generate buat bikin kelompok (tombol bisa di-klik berkali-kali untuk mendapatkan hasil yang berbeda)",
+      desc: "Tekan Tombol Generate buat bikin kelompok",
     },
   ];
 
   return (
-    <div>
-      <h6 className="text-lg font-semibold">Cara Pake</h6>
-      <ol className="flex list-inside list-decimal flex-col gap-1.5 last:mb-1">
+    <>
+      <h6 className="text-lg font-semibold">Cara Pakai</h6>
+      <ol className="flex list-inside list-decimal flex-col gap-1.5">
         {usages.map((usage) => {
           return <li key={usage.id}>{usage.desc}</li>;
         })}
       </ol>
-    </div>
+    </>
   );
 }
 
