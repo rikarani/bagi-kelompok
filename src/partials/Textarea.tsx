@@ -1,15 +1,8 @@
 import { forwardRef, useId } from "react";
+import { TextareaProps } from "../interfaces/interfaces";
 
-interface TextareaProps {
-  label: string;
-  baris: number;
-  placeholder?: string;
-  resize?: boolean;
-  value?: string;
-  readonly?: boolean;
-}
-
-const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({ label, placeholder, baris, value, readonly = false, resize = true }, ref) => {
+// * React.ForwardRefExoticComponent<TextareaProps & React.RefAttributes<HTMLTextAreaElement>>
+const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({ label, placeholder, baris = 3, value, readonly = false, resize = true }, ref) => {
   const id = useId();
 
   return (
@@ -25,6 +18,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({ label, placeh
         ref={ref}
         className={`form-textarea mt-0.5 box-border w-full ${resize ? "resize-y" : "resize-none"} rounded border-black px-1 py-0.5 focus:border-transparent focus:ring-1 focus:ring-black`}
         readOnly={readonly}
+        required={true}
       ></textarea>
     </div>
   );
