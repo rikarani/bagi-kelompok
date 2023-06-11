@@ -32,7 +32,7 @@ function Inputan(): React.JSX.Element {
 
       <div className="sm:flex sm:gap-2">
         <Input ref={inputRef} label="Jumlah Anggota per Kelompok" placeholder="cth: 3" />
-        <Button onClick={handleClick} text="Test" />
+        <Button onClick={handleClick} text="Generate" />
       </div>
     </div>
   );
