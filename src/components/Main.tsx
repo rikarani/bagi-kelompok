@@ -16,11 +16,8 @@ function Main(): React.JSX.Element {
         <KelompokContext.Provider value={{ dataKelompok, setDataKelompok }}>
           <div className="mb-1 divide-y-2 divide-black">
             {/* Inputan */}
-
             <Inputan />
-
             {/* Inputan */}
-
             {/* Hasil */}
             <div className={firstRender ? "hidden" : "block"}>
               <Hasil sourceData={dataKelompok} />
