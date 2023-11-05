@@ -17,4 +17,4 @@ function kombinasi(source: string, n: number) {
   return _.combinations(parse(source), n);
 }
 
-export { chunkify, kombinasi, parse };
+export { chunkify, kombinasi };
