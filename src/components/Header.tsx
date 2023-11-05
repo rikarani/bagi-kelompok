@@ -1,4 +1,3 @@
-import React from "react";
 import { IconContext } from "react-icons/lib/esm/iconContext";
 import { BsGithub } from "react-icons/bs";
 import Usage from "./Usage";
@@ -14,10 +13,10 @@ function Header(): React.JSX.Element {
         </IconContext.Provider>
         <div>
           <h1 className="text-2xl font-semibold">Bagi Kelompok</h1>
-          <h2>Projek UAS Mata Kuliah Probabilitas dan Statistik</h2>
+          <h2>Projek UTS Mata Kuliah Matematika Diskrit</h2>
         </div>
       </div>
-      <div className="mt-2">
+      <div className="mt-4">
         <Usage />
       </div>
     </div>

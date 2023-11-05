@@ -1,4 +1,3 @@
-import React from "react";
 interface UsagesInterface {
   id: number;
   desc: string;
@@ -24,8 +23,8 @@ function Usage(): React.JSX.Element {
     <>
       <h6 className="text-lg font-semibold">Cara Pakai</h6>
       <ol className="flex list-inside list-decimal flex-col gap-1.5">
-        {usages.map((usage) => {
-          return <li key={usage.id}>{usage.desc}</li>;
+        {usages.map(({ id, desc }) => {
+          return <li key={id}>{desc}</li>;
         })}
       </ol>
     </>

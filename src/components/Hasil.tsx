@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { KelompokContext } from "../context/contexts";
 import Textarea from "../partials/Textarea";
 interface HasilProps {

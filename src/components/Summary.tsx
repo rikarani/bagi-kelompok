@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { KelompokContext, CombinationContext } from "../context/contexts";
 
 function Summary(): React.JSX.Element {
